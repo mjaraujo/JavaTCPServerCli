@@ -61,7 +61,7 @@ public class ManipuladorEntradas {
 
     private ArrayList<String> listarArquivos() {
         ArrayList<String> listaArquivos = new ArrayList<>();
-        File folder = new File("/home/marcio/Documentos/");
+        File folder = new File(this.caminhoArquivos);
         File[] listOfFiles = folder.listFiles();
 
         for (File file : listOfFiles) {

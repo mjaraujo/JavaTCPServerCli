@@ -34,7 +34,7 @@ public class Conexao extends Thread {
         if (processar == RETORNO.ENVIAR_RESPOSTA_LISTA) {
             for (String s : mpEntradas.getRespostaLista()) {
                 resp += s;
-                resp += ('\n');
+                resp += ":";
             }
             saida = new DataOutputStream(cliente.getOutputStream());
             saida.writeUTF(resp);
@@ -45,7 +45,7 @@ public class Conexao extends Thread {
 
             try {
                 File file = new File(mpEntradas.getPathArquivo());
-                InputStream in = new FileInputStream("/home/marcio/Documentos/" + file);
+                InputStream in = new FileInputStream(caminhoArquivosServer + File.separator + file);
                 long length = file.length();
                 byte[] bytes = new byte[16 * 1024];
 

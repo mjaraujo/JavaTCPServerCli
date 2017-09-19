@@ -69,7 +69,7 @@ public class ServerForm extends javax.swing.JFrame {
 
         jLabel3.setText("Caminho:");
 
-        txtCaminho.setText("/home/marcio/Documentos/");
+        txtCaminho.setText("C:\\Users\\ALUNO\\Downloads");
         txtCaminho.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtCaminhoActionPerformed(evt);
